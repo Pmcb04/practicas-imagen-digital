@@ -1,0 +1,393 @@
+{
+    "spotlights": [
+        {   
+            "id"         : 0,
+            "diffused_light"   : [1.0, 1.0, 1.0, 1.0],
+            "ambient_light" : [0.0, 0.7, 1.0, 1.0],
+            "specular_light": [1.0, 1.0, 1.0, 1.0],
+            "location"    : [3.0, 0.97, 0.43, 0.2]
+        },{
+            "id"         : 1,
+            "diffused_light"   : [1.0, 1.0, 0.0, 1.0],
+            "ambient_light" : [1.0, 1.0, 0.0, 1.0],
+            "specular_light" : [1.0, 1.0, 0.0, 1.0],
+            "location"    : [1.5,2.3, 0.54, 0.2]
+        }
+        ,{
+            "id"         : 2,
+            "diffused_light"   : [0.0, 0.0, 1.0, 0.7],
+            "ambient_light" : [0.10, 0.30, 0.30, 0.7],
+            "specular_light": [0.90, 0.0, 0.80, 0.7],
+            "location"    : [2.0, 1.0, -6.0, 0.0]
+        },{
+            "id"         : 3,
+            "diffused_light"   : [0.5, 0.0, 0.0, 0.7],
+            "ambient_light" : [0.70, 0.30, 0.90, 0.9],
+            "specular_light": [0.0, 0.50, 1.0, 1.0],
+            "location"    : [2.0, 1.0, 6.0, 0.0]
+        },{
+            "id"         : 4,
+            "diffused_light"   : [0.0, 0.5, 0.5, 0.4],
+            "ambient_light" : [0.43, 0.26, 0.27, 0.77],
+            "specular_light": [0.10, 0.70, 0.18, 1.0],
+            "location"    : [7.0, 0.7, 2.0, 1.0]
+        },{
+            "id"         : 5,
+            "diffused_light"   : [0.5, 0.1, 0.2, 1.0],
+            "ambient_light" : [0.35, 0.40, 0.10, 1.0],
+            "specular_light": [0.15, 0.20, 0.00, 1.0],
+            "location"    : [1.0, -1.0, -4.0, 1.0]
+        },{
+            "id"         : 6,
+            "diffused_light"   : [0.5, 0.4, 0.0, 1.0],
+            "ambient_light" : [0.20, 0.57, 0.40, 1.0],
+            "specular_light": [0.60, 0.10, 0.30, 1.0],
+            "location"    : [1.0, 7.0, -1.0, 0.0]
+        },{
+            "id"         : 7,
+            "diffused_light"   : [0.5, 0.8, 0.6, 0.45],
+            "ambient_light" : [0.50, 0.50, 0.50, 0.8],
+            "specular_light": [0.20, 0.20, 0.20, 0.5],
+            "location"    : [1.0, -7.0, -6.0, 0.0]
+        }],
+
+
+    "frustum":{
+
+        "alpha": 20,
+        "aspect": 1, 
+        "near": 1, 
+        "far": 10000
+    },
+
+
+    "cameras" : [
+        {
+            "x_axis" : 10,
+            "y_axis" : 10,
+            "z_axis" : 10,
+            "center_x" : 0,
+            "center_y" : 0,
+            "center_z" : 0,
+            "up_x" : 0,
+            "up_y" : 1,
+            "up_z" : 0
+        },{
+            "x_axis" : 10,
+            "y_axis" : 0,
+            "z_axis" : 0,
+            "center_x" : 0,
+            "center_y" : 0,
+            "center_z" : 0,
+            "up_x" : 0,
+            "up_y" : 1,
+            "up_z" : 0
+        },{
+            "x_axis" : 0,
+            "y_axis" : 20,
+            "z_axis" : 0,
+            "center_x" : 0,
+            "center_y" : 0,
+            "center_z" : 0,
+            "up_x" : 1,
+            "up_y" : 0,
+            "up_z" : 1
+        },{
+            "x_axis" : 5,
+            "y_axis" : 5,
+            "z_axis" : 0,
+            "center_x" : 1,
+            "center_y" : 1,
+            "center_z" : 1,
+            "up_x" : 0,
+            "up_y" : 1,
+            "up_z" : 0
+        }],
+
+    "planets" : [
+        {
+            "inclination" : 20,
+            "radius" : 0.0,
+            "wRotAstro" : 0.3,
+            "wRotProp" : 0.2,
+            "size" : 7,
+            "name" : "Sol",
+            "moons" : [],
+            "material" : {
+                "shine"      : 100.0,
+                "diffused_light"   : [0.75164, 0.60648, 0.22648, 1.0],
+                "ambient_light" : [0.24725, 0.1995, 0.0745, 1.0],
+                "specular_light": [0.628281, 0.555802, 0.366065, 1.0]
+            }
+        },{
+            "inclination" : 0,
+            "radius" : 350.0, 
+            "wRotAstro" : 4.5,
+            "wRotProp" : 0.15,
+            "size" : 0.1,
+            "name" : "Mercurio",
+            "moons" :[],
+            "material" : {
+                "shine"      : 10.0,
+                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                "ambient_light" : [0.05,0.05,0.05,1.0],
+                "specular_light": [0.7,0.7,0.7,1.0]
+            }
+        },{
+            "inclination" : 177.3,
+            "radius" : 400.0,
+            "wRotAstro" : 4.0,
+            "wRotProp" : 0.4,
+            "size" : 0.3,
+            "name" : "Venus",
+            "moons" : [],
+            "material" : {
+                "shine"      : 25.6,
+                "diffused_light"   : [0.714, 0.4284, 0.18144, 1.0],
+                "ambient_light" : [0.2125, 0.1275, 0.054, 1.0],
+                "specular_light": [0.393548, 0.271906, 0.166721, 1.0]
+            }
+        },{
+            "inclination" : 23.4,
+            "radius" : 440.0,
+            "wRotAstro" : 3.5,
+            "wRotProp" : 0.35,
+            "size" : 0.5,
+            "name" : "Tierra",
+            "moons" : [
+                
+                        {
+                            "inclination" : 1.5424,
+                            "radius" : 30.0,
+                            "wRotAstro" : 6.45,
+                            "wRotProp" : 0.55,  
+                            "size" : 0.2,
+                            "name" : "Luna",
+                            "material" :{
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        }
+                    ],
+            "material" : {
+                "shine"      : 10.0,
+                "diffused_light"   : [0.4,0.5,0.5,1.0],
+                "ambient_light" : [0.0,0.05,0.05,1.0],
+                "specular_light": [0.04,0.7,0.7,1.0]
+            }
+            
+        },{
+            "inclination" : 25.2,
+            "radius" : 480.0,
+            "wRotAstro" : 2.5,
+            "wRotProp" : 0.33,
+            "size" : 0.25,
+            "name" : "Marte",
+            "moons" : [
+                
+                            {
+                                "inclination" : 0,
+                                "radius" : 22.54,
+                                "wRotAstro" : 6.45,
+                                "wRotProp" : 0.55,
+                                "size" : 0.08,
+                                "name" : "Fobos",
+                                "material" : {
+                                    "shine"      : 10.0,
+                                    "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                    "ambient_light" : [0.05,0.05,0.05,1.0],
+                                    "specular_light": [0.7,0.7,0.7,1.0]
+                                }
+                            },
+                            
+                            {   "inclination" : 0,
+                                "radius" : 26.7,
+                                "wRotAstro" : 4.5,
+                                "wRotProp" : 0.75,
+                                "size" : 0.1,
+                                "name" : "Deimos",
+                                "material" : {
+                                    "shine"      : 10.0,
+                                    "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                    "ambient_light" : [0.05,0.05,0.05,1.0],
+                                    "specular_light": [0.7,0.7,0.7,1.0]
+                                }
+                            }
+        
+                    ],
+            "material" : {
+                "shine"      : 70.0,
+                "diffused_light"   : [0.7, 0.0, 0.0, 0.0],
+                "ambient_light" : [0.7, 0.0, 0.0, 0.0],
+                "specular_light": [0.7, 0.0, 0.0, 0.0]
+            }
+        },{
+            "inclination" : 3.1,
+            "radius" : 820.0,
+            "wRotAstro" : 1.7,
+            "wRotProp" : 0.66,
+            "size" : 3.5,
+            "name" : "Jupiter",
+            "moons" : [
+                        {
+                            "inclination" : 0,
+                            "radius" : 154.144,
+                            "wRotAstro" : 6.45,
+                            "wRotProp" : 0.55,
+                            "size" : 0.264,
+                            "name" : "Ío",
+                            "material" : {
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        },
+                        
+                        {  
+                            "inclination" : 0.1,
+                            "radius" : 172.976,
+                            "wRotAstro" : 4.5,
+                            "wRotProp" : 0.75,
+                            "size" : 0.218,
+                            "name" : "Europa",
+                            "material" : {
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        },
+
+                        {  
+                            "inclination" : 0,
+                            "radius" : 212.568,
+                            "wRotAstro" : 4.5,
+                            "wRotProp" : 0.75,
+                            "size" : 0.309,
+                            "name" : "Calisto",
+                            "material" : {
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        },
+
+                        {
+                            "inclination" : 0.33,
+                            "radius" : 238.096,
+                            "wRotAstro" : 6.45,
+                            "wRotProp" : 0.55,
+                            "size" : 0.289,
+                            "name" : "Ganímedes",
+                            "material" : {
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        }
+                        
+                    ],
+            "material" : {
+                "shine"      : 51.2,
+                "diffused_light"   : [0.5508, 0.2118, 0.066, 1.0],
+                "ambient_light" : [0.2295, 0.08825, 0.0275, 1.0],
+                "specular_light": [0.580594, 0.223257, 0.0695701, 1.0]
+            }
+        },{
+            "inclination" : 26.7,
+            "radius" : 1220.0,
+            "wRotAstro" : 1.3,
+            "wRotProp" : 0.65,
+            "size" : 3,
+            "name" : "Saturno",
+            "moons" : [
+
+                        {
+                            "inclination" : 0,
+                            "radius" : 134.7,
+                            "wRotAstro" : 6.45,
+                            "wRotProp" : 0.55,
+                            "size" : 0.75,
+                            "name" : "Titan",
+                            "material" : {
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        }
+
+                     ],
+            "material" : {
+                "shine"      : 12.8,
+                "diffused_light"   : [0.7038, 0.27048, 0.0828, 1.0],
+                "ambient_light" : [0.19125, 0.0735, 0.0225, 1.0],
+                "specular_light": [0.256777, 0.137622, 0.086014, 1.0]
+            }
+        },{
+            "inclination" : 97.8,
+            "radius" : 1400.0,
+            "wRotAstro" : 0.70,
+            "wRotProp" : 0.45,
+            "size" : 1.3,
+            "name" : "Urano",
+            "moons" : [],
+            "material" : {
+                "shine"      : 9.84615,
+                "diffused_light"   : [0.427451, 0.470588, 0.541176, 1.0],
+                "ambient_light" : [0.105882, 0.058824, 0.113725, 1.0],
+                "specular_light": [0.333333, 0.333333, 0.521569, 1.0]
+            }
+        },{
+            "inclination" : 28.3,
+            "radius" : 1520.0,
+            "wRotAstro" : 0.35,
+            "wRotProp" : 0.45,
+            "size" : 1.1,
+            "name" : "Neptuno",
+            "moons" : [],
+            "material" : {
+                "shine"      : 9.84615,
+                "diffused_light"   : [0.427451, 0.470588, 0.541176, 1.0],
+                "ambient_light" : [0.105882, 0.058824, 0.113725, 1.0],
+                "specular_light": [0.333333, 0.333333, 0.521569, 1.0]
+            }
+        },{
+            "inclination" : 122.5,
+            "radius" : 1720.0,
+            "wRotAstro" : 0.28,
+            "wRotProp" : 0.32,
+            "size" : 1.13,
+            "name" : "Pluton",
+            "moons" : [
+
+                        {
+                            "inclination" : 0,
+                            "radius" : 57.98,
+                            "wRotAstro" : 6.45,
+                            "wRotProp" : 0.32,
+                            "size" : 0.46,
+                            "name" : "Caronte",
+                            "material" : {
+                                "shine"      : 10.0,
+                                "diffused_light"   : [0.5,0.5,0.5,1.0],
+                                "ambient_light" : [0.05,0.05,0.05,1.0],
+                                "specular_light": [0.7,0.7,0.7,1.0]
+                            }
+                        }
+
+
+                    ],
+            "material" : {
+                "shine"      : 9.84615,
+                "diffused_light"   : [0.427451, 0.470588, 0.541176, 1.0],
+                "ambient_light" : [0.105882, 0.058824, 0.113725, 1.0],
+                "specular_light": [0.333333, 0.333333, 0.521569, 1.0]
+            }
+        }]
+}
