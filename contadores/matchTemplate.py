@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 from matplotlib import pyplot as plt
-import MTM
+from MTM import matchTemplates
 import pandas as pd
 
 
@@ -27,16 +27,20 @@ class MatchTemplate:
 
     def doMatch(self, input_img):
 
-        import MTM
-        from MTM import matchTemplates
+        
         hits = matchTemplates(
                             self.templates,
                             input_img,
-                            score_threshold=0.5,
-                            searchBox=(0, 0, 3000, 750),
+                            score_threshold=0.6,
+                            searchBox=(0, 0, 90, 130),
                             method=cv2.TM_CCOEFF_NORMED,
-                            maxOverlap=0.1)
+                            maxOverlap=0.6)
+
+        # print(hits)
                 
+        if(hits.empty):
+            return "?"
+
+        return str(hits.get("TemplateName").values[0].split("_")[0])
         
-        return str(hits.get("TemplateName").values[0])
 

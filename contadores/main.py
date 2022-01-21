@@ -24,8 +24,6 @@ rectangleAreas = [  # x, y, ancho, alto
 class Window:
 
     def __init__(self):
-        f = open("out.txt", "w")
-        f.close()
         # Cargamos la pantalla principal
         self.MainWindow = uic.loadUi('mainwindow.ui')
         # Establecemos un título a la pantalla principal
